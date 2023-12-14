@@ -25,6 +25,8 @@
 
 `view_image_w_label.py`: Simultaneously compute dice coefficient and draw plane images.
 
+All codes except `data_utilities.py` were made by ourselves. `data_utilities.py` is based on [VerSe Repository](https://github.com/anjany/verse)'s file, which is modified for our use.
+
 ## Dataset
 실제 VerSe Dataset은 그 용량이 매우 크기에 다음 GitHub Repository에서 받을 수 있다.
 
