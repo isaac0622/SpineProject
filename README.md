@@ -1,7 +1,8 @@
 # Spine Labeling Project
 2023-2 Creative Integrated Design 1 Project Team A
 
-팀장 2020- 전민주
+팀장 2020-19291 전민주
+
 팀원 2020-19851 오이석
 
 ## Repository
