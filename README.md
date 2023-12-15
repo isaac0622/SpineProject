@@ -31,15 +31,21 @@ All codes except `data_utilities.py` were made by ourselves. `data_utilities.py`
 ## Dataset
 실제 VerSe Dataset은 그 용량이 매우 크기에 다음 GitHub Repository에서 받을 수 있다.
 
-[VerSe: Large Scale Vertebrae Segmentation Challenge](https://github.com/anjany/verse)
+**[VerSe: Large Scale Vertebrae Segmentation Challenge](https://github.com/anjany/verse)**
 
 ## Deep Learning Library
 
 학습의 기반이 된 딥러닝 라이브러리는 nnUNet으로, 다음 GitHub Repository에서 받을 수 있다.
 
-[nnUNet](https://github.com/MIC-DKFZ/nnUNet)
+**[nnUNet](https://github.com/MIC-DKFZ/nnUNet)**
 
 ## Demo
+
+Demo를 통해 척추 이미지에 레이블을 입힐 수 있다. 다음은 의사들의 수작업의 한 예이다.
+
+![sub-gl108_true](https://github.com/isaac0622/SpineProject/assets/88360025/63d63c08-be60-403a-9bd4-8ef5851166fb)
+
+본 Demo를 통해 위와 같은 이미지를 구현해 낼 수 있다.
 
 Python(≥ 3.9), PyTorch, GPU 사용환경(CUDA, CUDNN)이 구현되어야 한다. 그 위에 위의 링크에서 VerSe 데이터셋과 nnUNet을 설치하여야 한다.
 
@@ -109,4 +115,8 @@ Train의 결과도 진행 시 다음과 같은 이미지로 확인할 수 있다
 
 ### 3. Centroid Inference
 
-추론한 이미지 파일의 경로를 지정하여 `example_image_median.py`를 실행한다.
+추론한 이미지 파일의 경로를 지정하여 `example_image_median.py`를 실행한다. 실행 후에는 지정된 경로에 저장된 다음과 같은 사진을 확인할 수 있다.
+이때, EDA를 통해 Threshold 값을 수동적으로 지정할 수도 있다. 우리의 기준은 50이다.
+
+![sub-gl108_ours_50](https://github.com/isaac0622/SpineProject/assets/88360025/9f4e9471-a954-42c0-8181-56c471782e81)
+
