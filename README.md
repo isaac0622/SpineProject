@@ -22,6 +22,8 @@
 
 `example_image_centroid.py`: Inference centroid of each spine, using mean.
 
+`example_image_demo.py`: Centroid inference demo.
+
 `example_image_median.py`: Inference centroid of each spine, using median, a robust statistic.
 
 `view_image_w_label.py`: Simultaneously compute dice coefficient and draw plane images.
@@ -47,7 +49,11 @@ Demo를 통해 척추 이미지에 레이블을 입힐 수 있다. 다음은 의
 
 본 Demo를 통해 위와 같은 이미지를 구현해 낼 수 있다.
 
-Python(≥ 3.9), PyTorch, GPU 사용환경(CUDA, CUDNN)이 구현되어야 한다. 그 위에 위의 링크에서 VerSe 데이터셋과 nnUNet을 설치하여야 한다.
+Python(≥ 3.9), PyTorch, GPU 사용환경(CUDA, CUDNN)이 구현되어야 한다. 그 위에 위의 링크에서 VerSe 데이터셋과 nnUNet을 설치하여야 한다. 마지막으로 `nibabel` 패키지가 필요하다. 다음과 같이 설치할 수 있다.
+
+```
+pip install nibabel
+```
 
 ### 1. Preprocessing
 
@@ -120,3 +126,10 @@ Train의 결과도 진행 시 다음과 같은 이미지로 확인할 수 있다
 
 ![sub-gl108_ours_50](https://github.com/isaac0622/SpineProject/assets/88360025/9f4e9471-a954-42c0-8181-56c471782e81)
 
+#### Short Demo Of Centroid Inference
+
+모델을 학습할 시간이 없어 Centroid Inference만을 확인해보고 싶다면, 본 Repo를 clone한 후, repo 아래 다음 파일들을 넣어라.
+
+[Demo Files](https://drive.google.com/drive/folders/1JzyGKmcFY1lRK1ZyW4r0RUogggL2jAeC?usp=sharing)
+
+그 후 `example_image_demo.py`를 실행한다.
