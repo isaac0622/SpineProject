@@ -73,9 +73,9 @@ nnUNet_raw/
 └── Dataset104_VerSe2019_2D
 ```
 
-### 2. Preprocessing, Training, Estimating
+### 2. UNet Preprocessing, Training, Estimating
 
-nnUNet을 기반으로 전처리 시 사용한 projected image에 대한 학습을 시행한다. 이때, GPU의 활용을 최대화하기 위해서는 각 GPU 별로 fold를 지정하여 학습할 수 있다. 우선 preprocess를 한다.
+nnUNet을 기반으로 전처리 시 사용한 projected image에 대한 학습을 시행한다. 이때, GPU의 활용을 최대화하기 위해서는 각 GPU 별로 fold를 지정하여 학습할 수 있다. 우선 nnUNet의 preprocess를 한다.
 
 ```
 nnUNetv2_plan_and_preprocess -d DATASET_ID
